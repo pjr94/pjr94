@@ -1,0 +1,211 @@
+:root {
+  --color1: #33a988;
+  --color2: #33a94d;
+  --color1Dark: #0a210f;
+  font-size: 100%;
+}
+body {
+  margin: 0px;
+}
+
+#navBar {
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--color1);
+  position: fixed;
+  background-clip: padding-box;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+#navBar ul {
+  list-style-type: none;
+  float: right;
+}
+#navBar li {
+  display: inline;
+  font-size: 2em;
+  color: white;
+}
+#navBar a {
+  text-decoration: none;
+  color: white;
+  padding: 30px 30px;
+}
+#navBar a:hover {
+  background-color: var(--color2);
+}
+
+#m {
+  padding-top: 60px;
+}
+
+#welcome-section {
+  clear: both;
+  height: 100vh;
+  background-color: white;
+  background-image: linear-gradient(to bottom left, black, #a3a084);
+}
+
+#welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#welcome-text h1 {
+  margin: 0px;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+#welcome-text h2 {
+  color: var(--color1);
+}
+
+#projects {
+  background-color: var(--color2);
+  margin-top: -60px;
+  padding-bottom: 60px;
+}
+
+#projectHeader {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  width: 500px;
+  margin: auto;
+  padding-bottom: 10px;
+  border-bottom: 3px solid white;
+}
+.container {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  grid-gap: 50px;
+}
+.project-tile {
+  background-color: var(--color1Dark);
+  border-radius: 20px;
+  font-size: 0.8em;
+}
+.fade {
+  color: var(--color1Dark);
+  transition: color 1s;
+}
+.project-tile:hover .fade {
+  color: var(--color1);
+}
+.project-tile a {
+  text-decoration: none;
+}
+.projectTitle {
+  text-align: center;
+  color: white;
+}
+.portfolioImage {
+  width: 400px;
+  height: 200px;
+}
+#buttonDiv {
+  text-align: center;
+  margin-top: 50px;
+}
+#showAll a {
+  text-decoration: none;
+}
+#showAll {
+  background-color: var(--color1Dark);
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  font-weight: strong;
+  font-size: 1em;
+  color: white;
+  transition: background-color 1s;
+}
+#showAll:hover {
+  background-color: var(--color1);
+}
+
+footer {
+  background-color: var(--color1Dark);
+  overflow: hidden;
+}
+#contacts {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid var(--color1);
+}
+.footLinks {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  transition: transform 0.5s;
+  font-size: 2rem;
+}
+.footLinks:hover {
+  transform: translateY(8px);
+}
+#signOff {
+  text-align: center;
+  color: white;
+  margin: 20px 0 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #navBar {
+    overflow: hidden;
+  }
+  #navBar ul {
+    float: none;
+    text-align: center;
+  }
+  .projectTitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #navBar ul {
+    padding: 0px;
+  }
+  #navBar li {
+    display: block;
+    font-size: 1.5rem;
+  }
+  #navBar a {
+    padding: 5px 5px;
+  }
+  #projectHeader {
+    width: 200px;
+    font-size: 1.6rem;
+  }
+  .project-tile {
+    height: 70%;
+    width: 70%;
+  }
+  .portfolioImage {
+    height: 100%;
+    width: 100%;
+  }
+  .projectTitle {
+    font-size: 1rem;
+  }
+  .container {
+    grid-gap: 20px;
+  }
+  #buttonDiv {
+    margin-top: 20px;
+  }
+  #showAll {
+    font-size: 0.9rem;
+  }
+  .footLinks {
+    font-size: 1.7rem;
+  }
+}
