@@ -13,12 +13,12 @@ body {
 #navBar {
   overflow: hidden;
   width: 100%;
-  background-color: var(--color1);
   position: fixed;
   background-clip: padding-box;
   border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
-#navColorChange{
+#navColorChange {
   float: right;
   width: 100%;
   background: linear-gradient(30deg, var(--color1) 60%, var(--color1Dark) 1px);
@@ -48,11 +48,10 @@ body {
 #welcome-section {
   clear: both;
   height: 100vh;
-  background-color: white;
-  background-image: url("https://gyazo.com/69ecd70d898fe021cf3ff88839b096e7.png");
-  background-image: url("https://gyazo.com/69ecd70d898fe021cf3ff88839b096e7.png");
+  /* back up image gradient */
+  background-image: linear-gradient(to bottom left, black, #a3a084);
+  background-image: url("https://gyazo.com/8535f397a3bffd585440d792f5ca5d38.png");
   background-size: 100% 100%;
-/*  background-image: linear-gradient(to bottom left, black, #a3a084); */
 }
 
 #welcome-text {
@@ -71,11 +70,47 @@ body {
 #welcome-text h2 {
   color: var(--color1);
 }
+.goDown {
+  margin: -30px;
+  font-size: 4rem;
+  color: var(--color1);
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  /* Need both animation declarations for cross-browser compatability */
+  -webkit-animation: floatLoop 0.5s infinite alternate;
+  animation: floatLoop 0.5s infinite alternate
+}
+@-webkit-keyframes floatLoop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes floatLoop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 
 #projects {
-  background-color: var(--color2);
- /* margin-top: -50px;*/
-  padding-bottom: 60px;
+/* padding-top: to make link to section not display under navBar */
+  padding-top: 10px; 
+  background-color: var(--color1);
+  /* margin-top: -50px;*/
+  padding-bottom: 10px;
+}
+#projectsBG{
+  margin: 20px;
+  background: var(--color2);
+  border-radius: 25px;
+  padding-bottom: 20px;
 }
 
 #projectHeader {
@@ -92,7 +127,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  grid-gap: 50px;
+  grid-gap: 30px;
 }
 .project-tile {
   background-color: var(--color2Dark);
@@ -119,7 +154,7 @@ body {
 }
 #buttonDiv {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 #showAll a {
   text-decoration: none;
@@ -156,9 +191,9 @@ footer {
   transition: transform 0.5s;
   font-size: 2rem;
 }
-.footLinks a{
+.footLinks a {
   text-decoration: none;
-  color: white;  
+  color: white;
 }
 .footLinks:hover {
   transform: translateY(8px);
@@ -177,9 +212,13 @@ footer {
     float: none;
     text-align: center;
   }
-  #navColorChange{
-  background: linear-gradient(30deg, var(--color1) 20%, var(--color1Dark) 1px);
-}
+  #navColorChange {
+    background: linear-gradient(
+      30deg,
+      var(--color1) 20%,
+      var(--color1Dark) 1px
+    );
+  }
   .projectTitle {
     font-size: 1.4rem;
   }
@@ -196,9 +235,13 @@ footer {
   #navBar a {
     padding: 5px 5px;
   }
-  #navColorChange{
-  background: linear-gradient(30deg, var(--color1) 60%, var(--color1Dark) 1px);
-}
+  #navColorChange {
+    background: linear-gradient(
+      30deg,
+      var(--color1) 60%,
+      var(--color1Dark) 1px
+    );
+  }
   #projectHeader {
     width: 200px;
     font-size: 1.6rem;
