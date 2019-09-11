@@ -87,7 +87,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-25px);
   }
 }
 @keyframes floatLoop {
@@ -95,7 +95,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-25px);
   }
 }
 
@@ -153,24 +153,24 @@ body {
   width: 400px;
   height: 200px;
 }
+
 #buttonDiv {
   text-align: center;
   margin-top: 40px;
 }
-#showAll a {
-  text-decoration: none;
-}
-#showAll {
+#showAll {text-decoration: none;
+  padding: 10px;
   background-color: var(--color2Dark);
   border: none;
   border-radius: 25px;
+  /*
   height: 50px;
-  width: 120px;
+  width: 120px;*/
   text-align: center;
   font-weight: strong;
-  font-size: 1em;
+  font-size: 1.25em;
   color: white;
-  transition: background-color 0.5s;
+  transition: background-color 0.3s;
 }
 #showAll:hover {
   background-color: var(--color1);
