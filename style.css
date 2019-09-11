@@ -216,15 +216,25 @@ footer {
   #navColorChange {
     background: linear-gradient(
       30deg,
-      var(--color1) 20%,
+      var(--color1) 15%,
       var(--color1Dark) 1px
     );
   }
   #welcome-text{
     font-size: 2em;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   #projects {
-    font-size: 2em;
+    font-size: 1.8em;
+  }
+    .project-tile {
+    height: 100%;
+    width: 100%;
+  }
+  .portfolioImage {
+    height: 100%;
+    width: 100%;
   }
 }
 
