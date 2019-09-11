@@ -29,7 +29,7 @@ body {
 }
 #navBar li {
   display: inline;
-  font-size: 2em;
+  font-size: 1.7em;
   color: white;
 }
 #navBar a {
@@ -211,6 +211,7 @@ footer {
   #navBar ul {
     float: none;
     text-align: center;
+    font-size: 2em;
   }
   #navColorChange {
     background: linear-gradient(
@@ -219,8 +220,11 @@ footer {
       var(--color1Dark) 1px
     );
   }
-  .projectTitle {
-    font-size: 1.4rem;
+  #welcome-text{
+    font-size: 2em;
+  }
+  #projects {
+    font-size: 2em;
   }
 }
 
