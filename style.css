@@ -52,6 +52,7 @@ body {
   background-image: linear-gradient(to bottom left, black, #a3a084);
   background-image: url("https://gyazo.com/8535f397a3bffd585440d792f5ca5d38.png");
   background-size: 100% 100%;
+  margin-bottom: :-15px;
 }
 
 #welcome-text {
@@ -101,7 +102,7 @@ body {
 
 #projects {
 /* padding-top: to make link to section not display under navBar */
-  padding-top: 15px; 
+  padding-top: 30px; 
   background-color: var(--color1);
   /* margin-top: -50px;*/
   padding-bottom: 10px;
