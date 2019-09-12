@@ -1,7 +1,7 @@
 :root {
   --color1: #33a988;
   --color1Dark: #1e6551;
-  --color2: #28873d;
+  --color2: #33a94d;
   --color2Dark: #0a210f;
 
   font-size: 100%;
@@ -238,7 +238,7 @@ footer {
   #projects {
     font-size: 1.8em;
   }
-    .project-tile {
+  .project-tile {
     height: 90%;
     width: 90%;
   }
