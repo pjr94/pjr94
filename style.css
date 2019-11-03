@@ -1,301 +1,105 @@
-:root {
-  --color1: #33a988;
-  --color1Dark: #1e6551;
-  --color2: #33a94d;
-  --color2Dark: #0a210f;
-
-  font-size: 100%;
-}
-body {
-  margin: 0px;
+body{
+    margin: 0px;
 }
 
-#navBar {
-  overflow: hidden;
-  width: 100%;
-  position: fixed;
-  background-clip: padding-box;
-  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
-  z-index: 10;
-}
-#navColorChange {
-  float: right;
-  width: 100%;
-  background: linear-gradient(30deg, var(--color1) 75%, var(--color1Dark) 1px);
-}
-#navBar ul {
-  list-style-type: none;
-  float: right;
-}
-#navBar li {
-  display: inline;
-  font-size: 1.7em;
-  color: white;
-}
-#navBar a {
-  text-decoration: none;
-  color: white;
-  padding: 30px 30px;
-}
-#navBar a:hover {
-  background-color: var(--color2);
+.parallax{
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+
+
+  height: 50vh;
 }
 
-#m {
-  padding-top: 60px;
+
+
+
+/* Background Images */
+.bg-image-1{
+    background-image: url("images/looking-up3.jpg");
+}
+.bg-image-2{
+  background-image: url("images/fireflyBg.jpg");
 }
 
-#welcome-section {
-  clear: both;
-  height: 100vh;
-  /* back up image gradient */
-  background-image: linear-gradient(to bottom left, black, #a3a084);
-  background-image: url("https://gyazo.com/8535f397a3bffd585440d792f5ca5d38.png");
-  background-size: 100% 100%;
-  margin-bottom: :-15px;
+
+
+
+
+.content-bg{
+    background-color: f1f1f0;
 }
 
-#welcome-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-#welcome-text h1 {
-  margin: 0px;
-  font-size: 4em;
-  color: white;
-  text-align: center;
-}
-#welcome-text h2 {
-  color: var(--color1Dark);
-}
-.goDown {
-  
-  font-size: 4rem;
-  color: var(--color1Dark);
-  font-weight: 900;
-  position: relative;
-  z-index: 1;
-  text-decoration: none;
-  /* Need both animation declarations for cross-browser compatability */
-  -webkit-animation: floatLoop 0.5s infinite alternate;
-  animation: floatLoop 0.5s infinite alternate
-}
-@-webkit-keyframes floatLoop {
-  0% {
-    transform: translateY(0);
+
+.intro-container {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(6, 1fr);
   }
-  100% {
-    transform: translateY(-25px);
+
+.column20{
+    grid-column: 1 / 3;
   }
-}
-@keyframes floatLoop {
-  0% {
-    transform: translateY(0);
+.column80{
+    grid-column: 3 / 7;
+
   }
-  100% {
-    transform: translateY(-25px);
-  }
+
+#intro{
+    padding: 50px;
 }
 
-#projects {
-/* padding-top: to make link to section not display under navBar */
-  padding-top: 30px; 
-  background-color: var(--color1);
-  /* margin-top: -50px;*/
-  padding-bottom: 10px;
+.tech-stack{
+padding: 50px;
 }
-#projectsBG{
+
+.intro-container {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: f1f1f0;
+}
+
+
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: rgb(232, 231, 255);
+  width: 80%;
   margin: 20px;
-  background: var(--color2);
-  border-radius: 25px;
-  padding-bottom: 20px;
+  padding: 20px;
+  overflow: auto;
 }
 
-#projectHeader {
-  font-weight: bold;
-  text-align: center;
-  padding-top: 10px;
-  color: white;
-  width: 600px;
-  margin: auto;
-  border-bottom: 3px solid white;
-}
-.container {
-  margin-top: 30px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 15px;
-}
-.project-tile {
-  background-color: var(--color2Dark);
-  border-radius: 20px;
-  font-size: 0.8em;
-  margin: 15px;
-}
-.fade {
-  color: var(--color2Dark);
-  transition: color 1s;
-}
-.projectTitle:hover .fade {
-  color: var(--color1);
-}
-.project-tile a {
-  text-decoration: none;
-}
-.projectTitle {
-  text-align: center;
-  color: white;
-}
-.projectPen{
-  text-align: center;
 
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.projectPen a{
-  color: white;
+
+.card::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-.projectPen:hover .fade {
-  color: var(--color1);
-}
-.portfolioImage {
+
+.site-screenshot{
   width: 400px;
-  height: 200px;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
 }
 
-#buttonDiv {
-  text-align: center;
-  margin-top: 40px;
-}
-#showAll {text-decoration: none;
-  padding: 10px;
-  background-color: var(--color2Dark);
-  border: none;
-  border-radius: 25px;
-  text-align: center;
-  font-weight: strong;
-  font-size: 1.25em;
-  color: white;
-  transition: background-color 0.3s;
-  margin-bottom: 10px;
-}
-#showAll:hover {
-  background-color: var(--color1);
+.site-text{
+
 }
 
-footer {
-  background-color: var(--color2Dark);
-  overflow: hidden;
-}
-#contacts {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 5px solid var(--color1);
-}
-.footLinks {
-  display: inline-block;
-  margin: 10px;
-  transition: transform 0.5s;
-  font-size: 2rem;
-}
-.footLinks a {
-  text-decoration: none;
-  color: white;
-}
-.footLinks:hover {
-  transform: translateY(8px);
-}
-#signOff {
-  text-align: center;
-  color: white;
-  margin: 20px 0 20px 0;
-}
-
-@media screen and (max-width: 1000px) {
-  #navBar {
-    overflow: hidden;
-  }
-  #navBar ul {
-    float: none;
-    text-align: center;
-    font-size: 2em;
-  }
-  #navColorChange {
-    background: linear-gradient(
-      30deg,
-      var(--color1) 15%,
-      var(--color1Dark) 1px
-    );
-  }
-  #welcome-text{
-    font-size: 2em;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-  }
-  #projects {
-    font-size: 1.8em;
-  }
-  .project-tile {
-    height: 90%;
-    width: 90%;
-  }
-  .portfolioImage {
-    height: 100%;
-    width: 100%;
-  }
-  #showAll{
-    height: 150%;
-    width: 150%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #navBar ul {
-    padding: 0px;
-  }
-  #navBar li {
-    display: block;
-    font-size: 1.5rem;
-  }
-  #navBar a {
-    padding: 5px 5px;
-  }
-  #navColorChange {
-    background: linear-gradient(
-      30deg,
-      var(--color1) 60%,
-      var(--color1Dark) 1px
-    );
-  }
-  #projectHeader {
-    width: 200px;
-    font-size: 1.6rem;
-  }
-  .project-tile {
-    height: 70%;
-    width: 70%;
-  }
-  .portfolioImage {
-    height: 100%;
-    width: 100%;
-  }
-  .projectTitle {
-    font-size: 1rem;
-  }
-  .container {
-    grid-gap: 20px;
-  }
-  #buttonDiv {
-    margin-top: 20px;
-  }
-  #showAll {
-    font-size: 0.9rem;
-  }
-  .footLinks {
-    font-size: 1.7rem;
-  }
+.github-logo{
+  width: 100px;
+  bottom: 0;
 }
