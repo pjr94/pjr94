@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0px;
   color: #004283;
@@ -13,6 +17,55 @@ body{
   height: 100vh;
   
 }
+
+
+
+
+/* Nav Bar Section */
+nav ul{
+  z-index: 9999;
+  position: fixed;
+	top: 50vh;
+  right: 0px;
+  overflow: hidden;
+  background: rgba(241, 241, 240, 0.4);
+
+}
+nav li{
+  list-style-type: none;
+  
+  margin: 0 2vw;
+  /* our font-size will be 3% of the height of the viewport */
+  font-size: 3vh;
+}
+
+
+nav li a{
+  text-decoration: none;
+  display: block;
+  width: 60px;
+}
+
+/*change the layout of the navigation bar for all the screens 
+that have a width less or equal than 500px*/
+
+@media only screen and (max-width: 500px) {
+  /*shows elements in a column*/
+  ul{
+    flex-direction: column;
+  }
+  
+  /* deletes margin on top or bottom of the a tag*/
+  li{
+    margin: 0;
+  }
+ /* makes sure that the a tag will take the entire screen*/
+  a{
+    display: block;
+  }
+}
+
+
 
 
 
