@@ -6,12 +6,12 @@ body{
 }
 
 .parallax{
-background-attachment: fixed;
-background-position: top;
-background-repeat: no-repeat;
-
-height: 50vh;
-
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
+  height: 100vh;
+  
 }
 
 
@@ -19,20 +19,28 @@ height: 50vh;
 
 /* Background Images */
 .greyscale{
--webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
-filter: grayscale(50%);
+  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
 }
 
 .bg-image-1{
-  background-image: url("images/looking-up3.jpg")
-
+  background-image: url("images/foggy-trees.jpg");
+  background-position: 30% 40%;
+  
+}
+.bg-portfolio{
+  background-image: url("images/italy-blue-hills.jpg"); 
+  padding-bottom: 100px;
 
 }
 .bg-image-2{
-background-image: url("images/fireflyBg.jpg");
+  background-image: url("images/sunset.jpg");
+  height: 50vh;
 }
+
+
 .bg-image-3{
-background-image: url("images/hotairballoons.jpg");
+  background-image: url("images/hot-air-balloons.jpg");
 }
 
 
@@ -42,11 +50,17 @@ background-image: url("images/hotairballoons.jpg");
 
 
 .content-bg{
-  background-color: f1f1f0;
-
+  background-color: rgba(241, 241, 240, 0.8);
 }
 
-#intro{
+.bottom-half-position{
+  position: absolute;
+  top: 50vh;
+  width: 100%;
+  height: 100%;
+}
+
+.half-screen-height{
   height: 50vh;
 }
 
@@ -69,11 +83,11 @@ background-image: url("images/hotairballoons.jpg");
 
 
 .columns6-grid {
-display: grid;
-grid-column-gap: 0px;
-grid-row-gap: 50px;
-grid-template-columns: repeat(6, 1fr);
-background-color: f1f1f0;
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 50px;
+  grid-template-columns: repeat(6, 1fr);
+  
 }
 
 .column1-6{
@@ -87,38 +101,43 @@ background-color: f1f1f0;
   padding-left: 20px;
 }
 
+.portfolio-section{
+    padding-bottom: 50px;
+  padding-top: 50px;
+}
+
 
 .card {
-/* Add shadows to create the "card" effect */
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-transition: 0.3s;
-background-color: rgb(232, 231, 255);
-width: 90%;
-margin: 20px;
-padding: 20px;
-overflow: auto;
-border-radius: 5px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: rgb(232, 231, 255);
+  width: 90%;
+  margin: 20px;
+  padding: 20px;
+  overflow: auto;
+  border-radius: 5px;
 }
 
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
 /*
 .card::after {
-content: "";
-clear: both;
-display: table;
+  content: "";
+  clear: both;
+  display: table;
 }*/
 
 .site-screenshot{
-width: 400px;
-height: 250px;
-float: left;
-margin-right: 20px;
-transition: 0.3s;
-border-radius: 5px;
+  width: 400px;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
 .site-screenshot:hover{
@@ -127,15 +146,108 @@ border-radius: 5px;
 }
 
 .site-text{
-
+  
 }
 
 .github-logo{
-width: 100px;
-bottom: 0;
+  width: 100px;
+  bottom: 0;
 }
 
 .contact-icons{
-height: 50px;
-color: #1c2f5a;
+  height: 50px;
+  color: #1c2f5a;
+}
+
+
+@-webkit-keyframes flip {
+  from { -webkit-transform: rotateY(0deg); transform: rotateY(0deg); }
+  to { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
+}
+
+@keyframes flip {
+  from { -webkit-transform: rotateY(0deg); transform: rotateY(0deg); }
+  to { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
+}
+
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  padding-top: 20px;
+  
+}
+
+.flip-container, .front, .back {
+  
+}
+
+/* flip speed goes here */
+.flipper {
+  /*position: relative;
+  transition: 25s; */
+  transform-style: preserve-3d;
+  /* position: relative; */
+  -webkit-animation-name: flip;
+  animation-name: flip;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  
+}
+
+.flip1{
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  
+}
+.flip2{
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  
+}
+.flip3{
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;  
+}
+.flip4{
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;  
+}
+.flip5{
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+
+
+
+
+/* hide back of pane during swap */
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+  /*  position: absolute;
+  top: 0;
+  left: 0;*/
+}
+
+/* front pane, placed above back */
+.flip-card-front {
+  
+  z-index: 2;
+  /*  for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.flip-card-back {
+  transform: rotateY(180deg);
+  
 }
