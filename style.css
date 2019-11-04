@@ -1,7 +1,8 @@
 body{
   margin: 0px;
-  color: #1c2f5a;
+  color: #004283;
   font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .parallax{
@@ -63,9 +64,8 @@ background-image: url("images/hotairballoons.jpg");
   grid-column: 3 / 7;
 }
 
-.padder50{
-  padding: 50px;
-}
+.padder50{ padding: 50px; }
+.padder60{ padding: 60px; }
 
 
 .columns6-grid {
@@ -97,7 +97,7 @@ width: 90%;
 margin: 20px;
 padding: 20px;
 overflow: auto;
-
+border-radius: 5px;
 }
 
 
@@ -117,6 +117,13 @@ width: 400px;
 height: 250px;
 float: left;
 margin-right: 20px;
+transition: 0.3s;
+border-radius: 5px;
+}
+
+.site-screenshot:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  
 }
 
 .site-text{
