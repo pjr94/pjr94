@@ -1,10 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+
+
 <head>
     <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js-1.5.0/parallax.min.js"></script>
+    
     <link type="text/css" rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
     
-
-
+    
+    
     <!-- Navigation Bar -->
     <nav>
         <ul>
@@ -17,136 +25,143 @@
 
 <body>
     
-    <div class="bg-image-1 parallax greyscale" id="home">
-        
-        <div class="columns6-grid content-bg bottom-half-position half-screen-height">
+    <div class="height100" id="home">   
+        <div class="parallax-window height100 greyscale" data-parallax="scroll" data-speed="0.1" data-natural-height="100vh"  data-image-src="images/foggy-trees.jpg">
             
-            <div class="column20">
-                <div class="padder50">
-                    <h1>Hi, I'm Patrick</h1>
-                    <p>an aspiring front end developer on the path to becoming a full stack developer</p>
-                </div>
-            </div>
-            
-            <div class="column80">
-                <div class="padder60">
-                    
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper flip1">
-                            <div class="flip-card-front"></div>
-                            <div class="flip-card-back">
-                                <img class="flip-card-inner" src="images/html-5.png" alt="html-logo">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper flip2">
-                            <div class="flip-card-front"></div>
-                            <div class="flip-card-back">
-                                <img class="flip-card-inner" src="images/css.png" alt="css-logo">
-                            </div>    
-                        </div>
-                    </div>          
-                    
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper flip3"> 
-                            <div class="flip-card-front"></div>
-                            <div class="flip-card-back">
-                                <img class="flip-card-inner" src="images/bootstrap.png" alt="bootstrap-logo">
-                            </div>
-                        </div>
-                    </div>   
-                    
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper flip4"> 
-                            <div class="flip-card-front"></div>
-                            <div class="flip-card-back">
-                                <img class="flip-card-inner" src="images/c++.png" alt="c++-logo">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                        <div class="flipper flip5"> 
-                            <div class="flip-card-front"></div>
-                            <div class="flip-card-back">
-                                <img class="flip-card-inner" src="images/java.png" alt="java-logo">
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+            <div class="columns6-grid content-bg bottom-half-position half-screen-height">
                 
-            </div>
-            
-        </div>
-        
-    </div>
-    
-    <div class="bg-image-2 parallax greyscale"></div>
-    
-    
-    <div class="bg-portfolio parallax greyscale" id="portfolio">
-        
-        <div class="content-bg columns6-grid portfolio-section">
-            <div class="column1-6" id="portfolio-title">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="column2-6">
-                
-                <div class="card">
-                    <a href="https://pjr94.github.io/falling-free/"><img class="site-screenshot" src="images/fallingfree-site.jpg" alt="site screenshot"></a>
-                    <div class="site-text">            
-                        <h4><b>Falling Free</b></h4>
-                        <p>A band landing page for local band Falling Free</p>
-                        <p>Tech stack used: HTML CSS Bootstrap-3</p>
-                        <a href="https://github.com/pjr94/falling-free"><img class="github-logo" src="images/github.png"></a>
-                    </div>
-                </div> 
-                
-                <div class="card">
-                    <a href="https://pjr94.github.io/bowland/"><img class="site-screenshot" src="images/bowland-screenshot.jpg" alt="site screenshot"></a>
-                    <div class="site-text">
-                        <h4><b>Bowland Fell Runners</b></h4>
-                        <p>A front page remake of <a href="http://www.bowlandfellrunners.org.uk/">current Bowland site</a></p>
-                        <p>Tech stack used: HTML CSS Bootstrap-4</p>
-                        <a href="https://github.com/pjr94/bowland"><img class="github-logo" src="images/github.png"></a>
-                    </div>
-                </div> 
-                
-            </div>
-            
-        </div>   
-        
-    </div>
-    
-    
-    
-    
-    
-    
-    <div class="bg-image-3 parallax greyscale" id="contact">
-        
-        <div class="content-bg bottom-half-position half-screen-height">
-            <div class="columns6-grid">
                 <div class="column20">
                     <div class="padder50">
-                        <h2>Get in touch...</h2>
+                        <h1>Hi, I'm Patrick</h1>
+                        <p>an aspiring front end developer on the path to becoming a full stack developer</p>
                     </div>
-                    
                 </div>
+                
                 <div class="column80">
-                    <div class="padder50">
-                        <h2>I would love to hear from you...</h2>
-                        <!-- <a href="mailto:patrick.reade@hotmail.co.uk"><img class="contact-icons" src="images/email-icon.png"></a> -->
-                        <a href=""><img class="contact-icons" src="images/email-icon.png"></a>
-                        <a href="https://github.com/pjr94"><img class="contact-icons" src="images/github-icon.png"></a>
+                    <div class="padder60">
+                        
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper flip1">
+                                <div class="flip-card-front"></div>
+                                <div class="flip-card-back">
+                                    <img class="flip-card-inner" src="images/html-5.png" alt="html-logo">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper flip2">
+                                <div class="flip-card-front"></div>
+                                <div class="flip-card-back">
+                                    <img class="flip-card-inner" src="images/css.png" alt="css-logo">
+                                </div>    
+                            </div>
+                        </div>          
+                        
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper flip3"> 
+                                <div class="flip-card-front"></div>
+                                <div class="flip-card-back">
+                                    <img class="flip-card-inner" src="images/bootstrap.png" alt="bootstrap-logo">
+                                </div>
+                            </div>
+                        </div>   
+                        
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper flip4"> 
+                                <div class="flip-card-front"></div>
+                                <div class="flip-card-back">
+                                    <img class="flip-card-inner" src="images/c++.png" alt="c++-logo">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                            <div class="flipper flip5"> 
+                                <div class="flip-card-front"></div>
+                                <div class="flip-card-back">
+                                    <img class="flip-card-inner" src="images/java.png" alt="java-logo">
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
     
+    
+    <div class="parallax-window height50" data-parallax="scroll" data-speed="0.1" data-image-src="images/sunsetG.jpg"></div>
+    
+    <div class="" id="portfolio">
+        
+        <div class="parallax-window" data-parallax="scroll" data-speed="0" data-image-src="images/italy-blue-hills.jpg">
+            
+            <div class="content-bg columns6-grid portfolio-section">
+                <div class="column1-6" id="portfolio-title">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="column2-6">
+                    
+                    <div class="card">
+                        <a href="https://pjr94.github.io/falling-free/"><img class="site-screenshot" src="images/fallingfree-site.jpg" alt="site screenshot"></a>
+                        <div class="site-text">            
+                            <h4><b>Falling Free</b></h4>
+                            <p>A band landing page for local band Falling Free</p>
+                            <p>Tech stack used: HTML CSS Bootstrap-3</p>
+                            <a href="https://github.com/pjr94/falling-free"><img class="github-logo" src="images/github.png"></a>
+                        </div>
+                    </div> 
+                    
+                    <div class="card">
+                        <a href="https://pjr94.github.io/bowland/"><img class="site-screenshot" src="images/bowland-screenshot.jpg" alt="site screenshot"></a>
+                        <div class="site-text">
+                            <h4><b>Bowland Fell Runners</b></h4>
+                            <p>A front page remake of <a href="http://www.bowlandfellrunners.org.uk/">current Bowland site</a></p>
+                            <p>Tech stack used: HTML CSS Bootstrap-4</p>
+                            <a href="https://github.com/pjr94/bowland"><img class="github-logo" src="images/github.png"></a>
+                        </div>
+                    </div> 
+                    
+                </div>
+                
+            </div>   
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="" id="contact">
+
+        <div id="bg-1" class="parallax-window height100 reposition-left" data-parallax="scroll" data-speed="0.1" data-position-y="bottom" data-image-src="images/hot-air-balloonsG.jpg">
+
+            <div class="content-bg bottom-half-position half-screen-height reposition-right">
+                <div class="columns6-grid">
+                    <div class="column20">
+                        <div class="padder50">
+                            <h2>Get in touch...</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="column80">
+                        <div class="padder50">
+                            <h2>I would love to hear from you...</h2>
+                            <!-- <a href="mailto:patrick.reade@hotmail.co.uk"><img class="contact-icons" src="images/email-icon.png"></a> -->
+                            <a href=""><img class="contact-icons" src="images/email-icon.png"></a>
+                            <a href="https://github.com/pjr94"><img class="contact-icons" src="images/github-icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
+
+
+
+</html>
