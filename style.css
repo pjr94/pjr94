@@ -109,9 +109,7 @@ body{
   .portfolio-tile{
     max-width:440px;
   }
-  .site-screenshot{
-    
-  }
+
   .site-text{
     padding-top: 10px;
     clear:both;
@@ -125,6 +123,10 @@ body{
   .navbar-right{
     min-height: 0vh;
   }  
+
+  #foggy-trees{
+    width: 300%;
+  }
 }
 
 
@@ -168,6 +170,8 @@ body{
 .portfolio-section{
   padding-bottom: 100px;
   padding-top: 100px;
+  background-image: url("images/italy-blue-hills-g.jpg");
+  background-size: cover;
 }
 
 
