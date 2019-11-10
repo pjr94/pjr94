@@ -210,8 +210,6 @@ body{
   
 }
 
-
-
 .tech{
   border: 1px solid  #004283;
   padding: 5px;
@@ -220,8 +218,18 @@ body{
 
 .github-logo{
   width: 100px;
-  bottom: 0;
+  
 }
+
+.site-text{
+
+}
+.view-site-button{
+ margin-top: auto;
+}
+
+
+
 
 
 
