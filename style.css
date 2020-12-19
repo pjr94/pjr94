@@ -64,10 +64,6 @@ a:hover{
 
 
 
-
-
-
-
 .wrapper-grid{
   display: grid;
   grid-gap: 1em;
@@ -118,7 +114,7 @@ a:hover{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color: rgb(232, 231, 255);
-  width: 70%;
+  width: 80%;
   margin: 25px auto;
   padding: 20px;
   overflow: auto;
@@ -211,12 +207,16 @@ a:hover{
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1000;
-
+  padding-right: 10px;
   display: inline-block;
   padding-top: 20px;
   
 }
 
+/* Needs extra spacing */
+.js{
+padding-right: 15px;
+}
 
 /* flip speed goes here */
 .flipper {
@@ -256,7 +256,10 @@ a:hover{
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
-
+.flip6{
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
 
 
 

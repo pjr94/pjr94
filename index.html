@@ -1,204 +1,339 @@
 <!DOCTYPE html>
 <html>
-
-
-
-<head>
-    
+  <head>
     <title>Portfolio</title>
-    
-    <meta name="viewport" content="width=device-width,  initial-scale=1">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width,  initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="parallax.js-1.5.0/parallax.min.js"></script>
-    
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
-    
-    
-    
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Navigation Bar -->
     <nav id="nav-main" class="navbar-right navbar-expand-lg navbar-light">
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto flex-column">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item" ><a class="nav-link" href="#portfolio-title">Portfolio</a></li>
-                <li class="nav-item" ><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto flex-column">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio-title">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    
-    
-</head>
+  </head>
 
-
-
-
-
-
-
-
-<body data-spy="scroll" data-target="#nav-main" data-offset="100">
-    
-    <div class="" id="home">   
-        <div id="foggy-trees" class="parallax-window padder" data-parallax="scroll" data-speed="0.1" data-natural-height="100vh"  data-image-src="images/foggy-trees-85.jpg">
-            <div class="grid-section">
-                <div class="wrapper-grid">
-                    
-                    <div class="grid-text-area">
-                        <div class="padder50">
-                            <h1>Hi, I'm Patrick</h1>
-                            <p>an aspiring front end developer on the path to becoming a full stack developer</p>
-                        </div>
-                    </div>
-                    
-                    <div class="stack-area">
-                        <div class="tech-stack">
-                            
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper flip1">
-                                    <div class="flip-card-front"></div>
-                                    <div class="flip-card-back">
-                                        <img class="flip-card-inner" src="images/html-5.png" alt="html-logo">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper flip2">
-                                    <div class="flip-card-front"></div>
-                                    <div class="flip-card-back">
-                                        <img class="flip-card-inner" src="images/css.png" alt="css-logo">
-                                    </div>    
-                                </div>
-                            </div>          
-                            
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper flip3"> 
-                                    <div class="flip-card-front"></div>
-                                    <div class="flip-card-back">
-                                        <img class="flip-card-inner" src="images/bootstrap.png" alt="bootstrap-logo">
-                                    </div>
-                                </div>
-                            </div>   
-                            
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper flip4"> 
-                                    <div class="flip-card-front"></div>
-                                    <div class="flip-card-back">
-                                        <img class="flip-card-inner" src="images/c++.png" alt="c++-logo">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper flip5"> 
-                                    <div class="flip-card-front"></div>
-                                    <div class="flip-card-back">
-                                        <img class="flip-card-inner" src="images/java.png" alt="java-logo">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
+  <!-- Main -->
+  <body data-spy="scroll" data-target="#nav-main" data-offset="100">
+    <div class="" id="home">
+      <div
+        id="foggy-trees"
+        class="parallax-window padder"
+        data-parallax="scroll"
+        data-speed="0.1"
+        data-natural-height="100vh"
+        data-image-src="images/foggy-trees-85.jpg"
+      >
+        <div class="grid-section">
+          <div class="wrapper-grid">
+            <div class="grid-text-area">
+              <div class="padder50">
+                <h1>Hi, I'm Patrick</h1>
+                <p>
+                  an aspiring front end developer on the path to becoming a full
+                  stack developer
+                </p>
+              </div>
             </div>
+
+            <!-- Tech Stack -->
+            <div class="stack-area">
+              <div class="tech-stack">
+
+                <!-- HTML -->  
+                <div
+                  class="flip-container tech-tile"
+                  ontouchstart="this.classList.toggle('hover');"
+                >
+                  <div class="flipper flip1">
+                    <div class="flip-card-front"></div>
+                    <div class="flip-card-back">
+                      <img
+                        class="flip-card-inner"
+                        src="images/html-5.png"
+                        alt="html-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CSS -->
+                <div
+                  class="flip-container"
+                  ontouchstart="this.classList.toggle('hover');"
+                >
+                  <div class="flipper flip2">
+                    <div class="flip-card-front"></div>
+                    <div class="flip-card-back">
+                      <img
+                        class="flip-card-inner"
+                        src="images/css.png"
+                        alt="css-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- JS -->
+                <div
+                  class="flip-container js"
+                  ontouchstart="this.classList.toggle('hover');"
+                >
+                  <div class="flipper flip3">
+                    <div class="flip-card-front"></div>
+                    <div class="flip-card-back">
+                      <img
+                        class="flip-card-inner"
+                        src="images/JavaScript-logo.png"
+                        alt="js-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- React -->
+                <div
+                  class="flip-container"
+                  ontouchstart="this.classList.toggle('hover');"
+                >
+                  <div class="flipper flip4">
+                    <div class="flip-card-front"></div>
+                    <div class="flip-card-back">
+                      <img
+                        class="flip-card-inner"
+                        src="images/react-logo.png"
+                        alt="js-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gatsby -->
+                <div
+                  class="flip-container"
+                  ontouchstart="this.classList.toggle('hover');"
+                >
+                  <div class="flipper flip5">
+                    <div class="flip-card-front"></div>
+                    <div class="flip-card-back">
+                      <img
+                        class="flip-card-inner"
+                        src="images/gatsby-logo.png"
+                        alt="js-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bootstrap-->
+                <div
+                  class="flip-container"
+                  ontouchstart="this.classList.toggle('hover');"
+                >
+                  <div class="flipper flip6">
+                    <div class="flip-card-front"></div>
+                    <div class="flip-card-back">
+                      <img
+                        class="flip-card-inner"
+                        src="images/bootstrap.png"
+                        alt="bootstrap-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <!--
-        <div class="parallax-window height50" data-parallax="scroll" data-speed="0.1" data-image-src="images/sunsetG.jpg"></div>
-    -->
-    
-    
-    
-    
-    
-    
+
+    <!-- Portfolio Section-->
     <div class="" id="portfolio">
-        
-        
-        <div class="portfolio-section">
-            <div class="wrapper-portfolio">
-                <div class="title-area">
-                    <h1 id="portfolio-title" >Portfolio</h1>
-                </div>
-                <div class="portfolio-area">
-                    
-                    <div class="portfolio-tile">
-                        <a href="https://pjr94.github.io/falling-free/"><img class="site-screenshot" src="images/fallingfree-site-s.jpg" alt="site screenshot"></a>
-                        <div class="site-text">            
-                            <h4><b>Falling Free</b></h4>
-                            <p>A landing page for local band Falling Free</p>
-                            <p><span class="tech">HTML</span> <span class="tech">CSS</span> <span class="tech">Bootstrap-3</span></p>
-                            <a class="link-icon" href="https://github.com/pjr94/falling-free"><img class="github-logo" src="images/github.png"></a>
-                            <span class="view-site-button"><a href="https://pjr94.github.io/falling-free/">View Site</a></span>
-                        </div>
-                    </div> 
-                    
-                    <div class="portfolio-tile">
-                        <a href="https://pjr94.github.io/bowland/"><img class="site-screenshot" src="images/bowland-screenshot-s.jpg" alt="site screenshot"></a>
-                        <div class="site-text">
-                            <h4><b>Bowland Fell Runners</b></h4>
-                            <p>A front page remake of the <a href="http://www.bowlandfellrunners.org.uk/">current Bowland site</a></p>
-                            <p><span class="tech">HTML</span> <span class="tech">CSS</span> <span class="tech">Bootstrap-4</span></p>
-                            <a class="link-icon" href="https://github.com/pjr94/bowland"><img class="github-logo" src="images/github.png"></a>
-                            <span class="view-site-button"><a href="https://pjr94.github.io/bowland">View Site</a></span>
-                    
-                        </div>
-                    </div> 
-                    
-                </div>
-                
+      <div class="portfolio-section">
+        <div class="wrapper-portfolio">
+          <div class="title-area">
+            <h1 id="portfolio-title">Portfolio</h1>
+          </div>
+
+          <div class="portfolio-area">
+              
+            <!-- Pokedex -->
+            <div class="portfolio-tile">
+              <a href="https://friendly-heyrovsky-a3c6e0.netlify.app/"
+                >
+                <img
+                  class="site-screenshot"
+                  src="images/screenshots/pokedex.png"
+                  alt="site screenshot"
+                />
+                </a>
+              <div class="site-text">
+                <h4><b>Pokedex</b></h4>
+                <p>A pokedex web app retrieving data using the PokeAPI, with JS wrapper for caching</p>
+                <p>Dynamically works out each pokemon's streangths and weaknesses based on their types</p>
+                <p>Stored up to 10 most recent searches in history</p>
+                <p>
+                  <span class="tech">React</span>
+                  <span class="tech">Gatsby</span>
+                  <span class="tech">API calls</span>
+                </p>
+                <a
+                  class="link-icon"
+                  href="https://github.com/pjr94/pokedex"
+                  ><img class="github-logo" src="images/github.png"
+                /></a>
+                <span class="view-site-button"
+                  ><a href="https://friendly-heyrovsky-a3c6e0.netlify.app/"
+                    >View Site</a
+                  ></span
+                >
+              </div>
             </div>
-        </div>   
-    </div>
-    
-    
-    
-    
-    
-    
-    <div class="" id="contact">
-        
-        <div id="bg-1" class="parallax-window padder" data-parallax="scroll" data-speed="0.1" data-position-y="bottom" data-image-src="images/hot-air-balloonsG.jpg">
+
+            <!-- Snowboard Shop -->
+            <div class="portfolio-tile">
+              <a href="https://vigilant-pike-6b9d64.netlify.app/"
+                ><img
+                  class="site-screenshot"
+                  src="images/screenshots/shopping-cart.png"
+                  alt="site screenshot"
+              /></a>
+              <div class="site-text">
+                <h4><b>Snowboard Shop</b></h4>
+                <p>A shopping page for a snowboard shop</p>
+                <p>Filter items based on board type, gender, price</p>
+                <p>Add and Remove items from card</p>
+                <p>
+                  <span class="tech">React</span> 
+                </p>
+                <a class="link-icon" href="https://github.com/pjr94/shopping-cart"
+                  ><img class="github-logo" src="images/github.png"
+                /></a>
+                <span class="view-site-button"
+                  ><a href="https://vigilant-pike-6b9d64.netlify.app/">View Site</a></span
+                >
+              </div>
+            </div>
+
+            <!-- Snowboard Shop -->
+            <div class="portfolio-tile">
+              <a href="https://vigilant-pike-6b9d64.netlify.app/"
+                ><img
+                  class="site-screenshot"
+                  src="images/screenshots/army-builder.png"
+                  alt="site screenshot"
+              /></a>
+              <div class="site-text">
+                <h4><b>Army Builder</b></h4>
+                <p>An army points calculator for tabletop games</p>
+                <p>Shows when cumulative points exceed user-specified maximum</p>
+                <p>Add or Remove units from each squad</p>
+                <p>
+                  <span class="tech">JavaScript</span> 
+                </p>
+                <a class="link-icon" href="https://github.com/pjr94/shopping-cart"
+                  ><img class="github-logo" src="images/github.png"
+                /></a>
+                <span class="view-site-button"
+                  ><a href="https://vigilant-pike-6b9d64.netlify.app/">View Site</a></span
+                >
+              </div>
+            </div>
             
-            <div class="">
-                <div class="grid-section">
-                    <div class="wrapper-grid">
-                        <div class="grid-text-area">
-                            <div class="padder50">
-                                <h2 class="contact-text">Get in touch...</h2>
-                            </div>
-                            
-                        </div>
-                        <div class="stack-area">
-                            <div class="padder50">
-                                <h2 class="contact-heading contact-text">I would love to hear from you...</h2>
-                                <!-- <a href="mailto:patrick.reade@hotmail.co.uk"><img class="contact-icons" src="images/email-icon.png"></a> -->
-                                <a class="link-icon2" href=""><img class="contact-icons" src="images/email-icon.png"></a>
-                                <a class="link-icon2" href="https://github.com/pjr94"><img class="contact-icons" src="images/github-icon.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
 
+    <div class="" id="contact">
+      <div
+        id="bg-1"
+        class="parallax-window padder"
+        data-parallax="scroll"
+        data-speed="0.1"
+        data-position-y="bottom"
+        data-image-src="images/hot-air-balloonsG.jpg"
+      >
+        <div class="">
+          <div class="grid-section">
+            <div class="wrapper-grid">
+              <div class="grid-text-area">
+                <div class="padder50">
+                  <h2 class="contact-text">Get in touch...</h2>
+                </div>
+              </div>
+              <div class="stack-area">
+                <div class="padder50">
+                  <h2 class="contact-heading contact-text">
+                    I would love to hear from you...
+                  </h2>
+                   <a class="link-icon2" href="mailto:patrick.reade@hotmail.co.uk"><img class="contact-icons" src="images/email-icon.png"></a> 
+                 <!-- <a class="link-icon2" href=""
+                    ><img class="contact-icons" src="images/email-icon.png"
+                  /></a>-->
+                  <a class="link-icon2" href="https://github.com/pjr94"
+                    ><img class="contact-icons" src="images/github-icon.png"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
