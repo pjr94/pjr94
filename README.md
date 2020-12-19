@@ -1,6 +1,7 @@
 # Portfolio
 
 Main portfolio page to showcase projects. Layout using CSS Grid. All images used royalty free from upsplash.com
+
 View Site: https://pjr94.github.io/portfolio/
 
 
